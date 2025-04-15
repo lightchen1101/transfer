@@ -1,0 +1,583 @@
+/*default-color*/
+/*border-color*/
+/*font*/
+/*btn-hover*/
+/*btn-color*/
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+.hide-text {
+  opacity: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", serif;
+}
+
+body {
+  margin: 0;
+  font-family: "Noto Sans TC", sans-serif;
+  background: #F9F9F9;
+  text-align: center;
+  overflow-x: hidden;
+}
+body .body {
+  min-height: calc(100vh - 214px);
+}
+@media (max-width: 1140px) and (min-width: 768px) {
+  body .body {
+    min-height: calc(100vh - 160px);
+  }
+}
+@media (max-width: 768px) {
+  body .body {
+    min-height: calc(100vh - 160px);
+  }
+}
+body .header {
+  background: white;
+  display: flex;
+  justify-content: left;
+  padding: 0 28px;
+  align-items: center;
+  min-height: 56px;
+  border-bottom: 1px solid #DDDDE3;
+  gap: 20px;
+}
+body .header .return {
+  transform: rotate(180deg) scaleX(-1);
+  text-decoration: none;
+}
+body .header .header-title {
+  font-size: 24px !important;
+  font-weight: 600;
+  margin: 0;
+}
+body .main-caption div {
+  font-size: 16px;
+  margin: 0;
+}
+body .main-container, body .main-container-center {
+  border-radius: 20px;
+  text-align: left;
+  background: #FFFFFF;
+  font-weight: 600;
+  font-size: 16px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  border: 1px solid #DDDDE3;
+  padding: 20px 40px;
+  gap: 10px;
+  text-decoration: none;
+}
+@media (max-width: 1140px) and (min-width: 768px) {
+  body .main-container, body .main-container-center {
+    padding: 20px 20px;
+  }
+}
+@media (max-width: 768px) {
+  body .main-container, body .main-container-center {
+    padding: 20px 20px;
+  }
+}
+body .main-container:hover, body .main-container-center:hover, body .main-container:active, body .main-container-center:active, body .main-container:visited, body .main-container-center:visited {
+  color: inherit;
+  text-decoration: none;
+}
+body .main-container p, body .main-container-center p, body .main-container span, body .main-container-center span {
+  margin: 2px;
+  font-size: 16px;
+  font-weight: 400;
+}
+body .main-container span, body .main-container-center span {
+  color: red;
+  margin: 0;
+}
+body .main-container img, body .main-container-center img {
+  width: 24px;
+  height: 24px;
+}
+body .main-container h3, body .main-container-center h3 {
+  margin: 5px;
+}
+body .main-container h4, body .main-container-center h4 {
+  margin: 5px;
+}
+body .main-container h5, body .main-container-center h5 {
+  margin: 5px;
+  color: #919191;
+  font-weight: 400;
+}
+body .main-container ol, body .main-container-center ol {
+  font-weight: 400;
+}
+body .main-container .center, body .main-container-center .center {
+  display: flex;
+  justify-content: center;
+}
+body .main-container .agree-btn, body .main-container-center .agree-btn {
+  text-align: center;
+  padding: 10px 30px;
+  border: 1px solid #DDDDE3;
+  border-radius: 15px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #646464;
+  color: white;
+  text-decoration: none;
+}
+body .main-container .input, body .main-container-center .input, body .main-container .input-inline, body .main-container-center .input-inline {
+  display: flex;
+  flex-direction: column;
+}
+body .main-container .input input, body .main-container-center .input input, body .main-container .input-inline input, body .main-container-center .input-inline input {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #DDDDE3;
+}
+body .main-container .input label, body .main-container-center .input label, body .main-container .input-inline label, body .main-container-center .input-inline label {
+  font-size: 16px;
+  font-weight: 400;
+}
+body .main-container .input h5, body .main-container-center .input h5, body .main-container .input-inline h5, body .main-container-center .input-inline h5 {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 10px;
+}
+body .main-container .input li, body .main-container-center .input li, body .main-container .input-inline li, body .main-container-center .input-inline li,
+body .main-container .input ul,
+body .main-container-center .input ul,
+body .main-container .input-inline ul,
+body .main-container-center .input-inline ul,
+body .main-container .input ol,
+body .main-container-center .input ol,
+body .main-container .input-inline ol,
+body .main-container-center .input-inline ol {
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0;
+}
+body .main-container .input li p, body .main-container-center .input li p, body .main-container .input-inline li p, body .main-container-center .input-inline li p, body .main-container .input li span, body .main-container-center .input li span, body .main-container .input-inline li span, body .main-container-center .input-inline li span,
+body .main-container .input ul p,
+body .main-container-center .input ul p,
+body .main-container .input-inline ul p,
+body .main-container-center .input-inline ul p,
+body .main-container .input ul span,
+body .main-container-center .input ul span,
+body .main-container .input-inline ul span,
+body .main-container-center .input-inline ul span,
+body .main-container .input ol p,
+body .main-container-center .input ol p,
+body .main-container .input-inline ol p,
+body .main-container-center .input-inline ol p,
+body .main-container .input ol span,
+body .main-container-center .input ol span,
+body .main-container .input-inline ol span,
+body .main-container-center .input-inline ol span {
+  font-size: 12px;
+  font-weight: 400;
+  color: black;
+}
+body .main-container .input ul li::marker, body .main-container-center .input ul li::marker, body .main-container .input-inline ul li::marker, body .main-container-center .input-inline ul li::marker {
+  font-size: 0.5em;
+}
+body .main-container .input-inline, body .main-container-center .input-inline {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin: 2px;
+}
+@media (max-width: 1140px) and (min-width: 768px) {
+  body .main-container .input-inline, body .main-container-center .input-inline {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 768px) {
+  body .main-container .input-inline, body .main-container-center .input-inline {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+body .main-container .input-inline select, body .main-container-center .input-inline select {
+  width: 80px;
+  padding: 10px;
+  border: 1px solid #DDDDE3;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+body .main-container .input-inline input[type=text], body .main-container-center .input-inline input[type=text] {
+  width: 35%;
+  padding: 10px;
+  border: 1px solid #DDDDE3;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+body .main-container .input-inline .radio-group, body .main-container-center .input-inline .radio-group {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  margin-left: 10px;
+}
+body .main-container .input-inline .radio-group input[type=radio], body .main-container-center .input-inline .radio-group input[type=radio] {
+  width: 20px;
+  height: 20px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 1px solid #DDDDE3;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+}
+body .main-container .input-inline .radio-group input[type=radio]:checked::before, body .main-container-center .input-inline .radio-group input[type=radio]:checked::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-color: #71717A;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body .main-container .submit, body .main-container-center .submit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+body .main-container .submit a, body .main-container-center .submit a {
+  text-align: center;
+  background-color: #8D8D8D;
+  padding: 10px 30px;
+  border: 1px solid #DDDDE3;
+  border-radius: 15px;
+  color: white;
+  width: 180px;
+  text-decoration: none;
+}
+body .main-container .submit p, body .main-container-center .submit p, body .main-container .submit span, body .main-container-center .submit span {
+  margin-top: 40px;
+}
+body .main-container hr, body .main-container-center hr {
+  border: 2px solid #DDDDE3;
+  margin: 20px 0;
+}
+body .main-container .upload, body .main-container-center .upload {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 10px;
+  margin: 10px 0;
+  border: 1px solid #DDDDE3;
+  border-radius: 10px;
+}
+body .main-container .upload img, body .main-container-center .upload img {
+  margin-right: 5px;
+}
+body .main-container .upload p, body .main-container-center .upload p, body .main-container .upload span, body .main-container-center .upload span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+  font-weight: 500;
+}
+body .main-container .upload hr, body .main-container-center .upload hr {
+  margin: 10px 0;
+}
+body .main-container .upload span, body .main-container-center .upload span {
+  margin: 0;
+  color: black;
+  font-weight: 400;
+  gap: 10px;
+}
+body .main-container .upload .not-uploaded, body .main-container-center .upload .not-uploaded, body .main-container .upload .teacher-upload, body .main-container-center .upload .teacher-upload, body .main-container .upload .uploaded, body .main-container-center .upload .uploaded {
+  color: #C62A2F;
+  background-color: #FDD8D8;
+  padding: 5px 10px;
+  display: inline-block;
+  border-radius: 20px;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  font-weight: 500;
+}
+body .main-container .upload .uploaded, body .main-container-center .upload .uploaded {
+  color: #18794E;
+  background-color: #DDF3E4;
+}
+body .main-container .upload .teacher-upload, body .main-container-center .upload .teacher-upload {
+  color: #775F28;
+  background-color: #FCF3AF;
+}
+body .main-container .upload .input, body .main-container-center .upload .input, body .main-container .upload .input-inline, body .main-container-center .upload .input-inline {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+body .main-container .upload .input .input-inline, body .main-container-center .upload .input .input-inline, body .main-container .upload .input-inline .input-inline, body .main-container-center .upload .input-inline .input-inline {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+body .main-container .upload .input .input-inline label, body .main-container-center .upload .input .input-inline label, body .main-container .upload .input-inline .input-inline label, body .main-container-center .upload .input-inline .input-inline label {
+  white-space: nowrap;
+}
+body .main-container .upload .input .input-inline input[type=text], body .main-container-center .upload .input .input-inline input[type=text], body .main-container .upload .input-inline .input-inline input[type=text], body .main-container-center .upload .input-inline .input-inline input[type=text] {
+  padding: 10px;
+  border: 1px solid #DDDDE3;
+  border-radius: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+}
+body .main-container .upload .upload-btn, body .main-container-center .upload .upload-btn {
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+  color: white;
+  text-decoration: none;
+}
+body .main-container .upload .upload-btn button, body .main-container-center .upload .upload-btn button {
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  padding: 5px 10px;
+}
+body .main-container .upload .upload-btn button img, body .main-container-center .upload .upload-btn button img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+body .main-container .upload .upload-btn .btn-able, body .main-container-center .upload .upload-btn .btn-able {
+  background-color: #EBEBEF;
+  color: #60646C;
+  border: 1px solid #D3D4DB;
+}
+body .main-container .upload .upload-btn .btn-enable, body .main-container-center .upload .upload-btn .btn-enable {
+  background-color: #E1E3E1;
+  color: #B9BBC6;
+  border: 1px solid #E1E3E1;
+}
+body .main-container-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .main-container-center .success, body .main-container-center .download {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #18794E;
+  background-color: #DDF3E4;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  font-size: 24px;
+  line-height: 1;
+}
+body .main-container-center .download {
+  background-color: #E1F0FF;
+}
+body .main-container-center .input, body .main-container-center .input-inline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .main-container-center .input p, body .main-container-center .input-inline p, body .main-container-center .input span, body .main-container-center .input-inline span {
+  font-size: 14px;
+  color: #919191;
+}
+body .main-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+@media (max-width: 1140px) and (min-width: 768px) {
+  body .main-grid {
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  body .main-grid {
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+  }
+}
+body .main-grid .main-container, body .main-grid .main-container-center {
+  margin: 0;
+  min-height: 20vh;
+  width: 100%;
+}
+@media (max-width: 1140px) and (min-width: 768px) {
+  body .main-grid .main-container, body .main-grid .main-container-center {
+    min-height: 0vh;
+  }
+}
+@media (max-width: 768px) {
+  body .main-grid .main-container, body .main-grid .main-container-center {
+    min-height: 0vh;
+  }
+}
+body .main-grid .main-container:hover, body .main-grid .main-container-center:hover, body .main-grid .main-container:active, body .main-grid .main-container-center:active, body .main-grid .main-container:visited, body .main-grid .main-container-center:visited {
+  color: inherit;
+  text-decoration: none;
+}
+body .main-grid-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 116px;
+  gap: 10px;
+}
+@media (max-width: 1140px) and (min-width: 768px) {
+  body .main-grid-row {
+    margin: 20px;
+  }
+}
+@media (max-width: 768px) {
+  body .main-grid-row {
+    margin: 20px;
+  }
+}
+body .main-grid-row .submit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+body .main-grid-row .submit .btns {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+body .main-grid-row .submit .btns .btn1 {
+  background-color: #bbbbbb;
+  color: #646464;
+  border: 1px solid #DDDDE3;
+}
+body .main-grid-row .submit .btns .btn2 {
+  background-color: #646464;
+  border: 1px solid #DDDDE3;
+  color: white;
+}
+body .main-grid-row .submit a {
+  text-align: center;
+  background-color: #8D8D8D;
+  padding: 10px 30px;
+  border: 1px solid #DDDDE3;
+  border-radius: 15px;
+  color: white;
+  width: 180px;
+  text-decoration: none;
+}
+@media (max-width: 1140px) and (min-width: 768px) {
+  body .main-grid-row .submit a {
+    width: 150px;
+  }
+}
+@media (max-width: 768px) {
+  body .main-grid-row .submit a {
+    width: 150px;
+  }
+}
+body .main-grid-row .submit p, body .main-grid-row .submit .main-container span, body .main-container .main-grid-row .submit span, body .main-grid-row .submit .main-container-center span, body .main-container-center .main-grid-row .submit span {
+  margin-top: 40px;
+}
+body .return-btn {
+  text-align: center;
+  padding: 10px 30px;
+  background-color: #bbbbbb;
+  border: 1px solid #DDDDE3;
+  border-radius: 15px;
+  color: #646464;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+footer {
+  background: white;
+  border-top: 1px solid #DDDDE3;
+  padding-block: 16px;
+  min-height: 120px;
+}
+footer .footer-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 15%;
+}
+@media (max-width: 1140px) and (min-width: 768px) {
+  footer .footer-container {
+    display: block;
+    justify-content: center;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 768px) {
+  footer .footer-container {
+    display: block;
+    justify-content: center;
+    margin: 0 auto;
+  }
+}
+footer .footer-container :last-child {
+  border-left: 1px solid white;
+}
+footer .footer-container h1 {
+  font-size: 20px;
+  display: inline-block;
+  margin: 0 auto 0 0;
+}
+@media (max-width: 1140px) and (min-width: 768px) {
+  footer .footer-container h1 {
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  footer .footer-container h1 {
+    display: block;
+  }
+}
+footer .footer-container h3 {
+  font-size: 16px;
+  display: inline-block;
+  padding: 0 12px;
+  margin-block: 8px;
+}
+footer .footer-container p, footer .footer-container body .main-container span, body .main-container footer .footer-container span, footer .footer-container body .main-container-center span, body .main-container-center footer .footer-container span {
+  display: inline-block;
+  padding: 0 12px;
+}
+footer .footer-container p.footer-copyright, footer .footer-container body .main-container span.footer-copyright, body .main-container footer .footer-container span.footer-copyright, footer .footer-container body .main-container-center span.footer-copyright, body .main-container-center footer .footer-container span.footer-copyright {
+  padding: 0;
+}
+@media (max-width: 1140px) and (min-width: 768px) {
+  footer .footer-container p.footer-policy, footer .footer-container body .main-container span.footer-policy, body .main-container footer .footer-container span.footer-policy, footer .footer-container body .main-container-center span.footer-policy, body .main-container-center footer .footer-container span.footer-policy {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  footer .footer-container p.footer-policy, footer .footer-container body .main-container span.footer-policy, body .main-container footer .footer-container span.footer-policy, footer .footer-container body .main-container-center span.footer-policy, body .main-container-center footer .footer-container span.footer-policy {
+    display: none;
+  }
+}/*# sourceMappingURL=home.css.map */
